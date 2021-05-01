@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Inter" , sans-serif;
+}
+
+
+body{
+
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    background-color:hsl(244, 38%, 16%);
+    margin: 50px 20px;
+    padding: 0 0 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.foto{
+    background: url("./images/image-header-mobile.jpg") 
+    no-repeat center/cover;
+    max-width: 100%;
+    height: 400px;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: multiply;  
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+h2 span{
+    color: hsl(277, 64%, 61%);
+}
+
+p{
+    font-size:15px;
+    line-height:1.6;
+  
+    color: hsla(0, 0%, 100%, 0.75);
+  
+}
+
+
+.footer {
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.footer .data{
+    flex: 1;
+    height: 250px;
+    display: flex;
+    flex-direction:column;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 10px;
+}
+
+.footer .data .titulo{
+    font-size:24px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.footer .data .subtitulo{
+    font-size:12px;
+    padding-top: 5px;
+    color: hsla(0, 0%, 100%, 0.6);
+    letter-spacing: 2px;
+}
+
+
+@media (min-width: 768px) {
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    
+}
