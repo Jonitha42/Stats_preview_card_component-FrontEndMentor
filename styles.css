@@ -84,22 +84,24 @@ body{
         align-items: center;
         justify-content: center;
         text-align: left;
-        padding: 0px;
+        padding:0px;
+        overflow: hidden;
     }
 
     .tarjeta{
-        margin: auto;
-        padding-left: 10px;
-    }
+        padding-left: 15px;
 
+    }
+    
     .tituloprincipal{
-        font-weight: 700;
+       
+        font-size: 30px;
     }
 
     .texto{
         font-weight: 500;
         text-align:left;
-        padding-top: 20px;
+        padding-top: 15px;
     }
 
     .footer .data{
@@ -120,16 +122,32 @@ body{
         display: block;
         color: hsla(0, 0%, 100%, 0.6);
         font-weight: 500;
-        font-size:12px;
+        font-size:15px;
         padding-bottom: 15px;
+        
     }
 
     .foto{
         background: url("./images/image-header-desktop.jpg") 
         no-repeat center/cover;
-        min-width: 40%;
-        height: 450px;
+        min-width: 50%;
+        height: 500px;
         background-color: hsl(277, 64%, 61%);
         background-blend-mode: multiply;  
     }
+}
+
+
+@media (min-width: 992px) {
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+ 
+
 }
