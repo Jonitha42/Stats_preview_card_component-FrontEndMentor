@@ -32,37 +32,29 @@ body{
     background-blend-mode: multiply;  
 }
 
-h2{
+.tituloprincipal{
     margin-top: 30px;
     margin-bottom: 20px;
     padding: 0 20px;
     font-weight: 700;
 }
 
-h2 span{
+.tituloprincipal span{
     color: hsl(277, 64%, 61%);
 }
 
-p{
+.texto{
     font-size:15px;
     line-height:1.6;
-  
+    font-weight: 500;
     color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+    padding:10px;
   
-}
-
-
-.footer {
-    display:flex;
-    flex-wrap: wrap;
-    
 }
 
 .footer .data{
-    flex: 1;
     height: 250px;
-    display: flex;
-    flex-direction:column;
     font-family: 'Lexend Deca', sans-serif;
     padding-top: 10px;
 }
@@ -73,20 +65,71 @@ p{
     font-weight: 700;
 }
 
-.footer .data .subtitulo{
+.footer .data span{
+    display: block;
     font-size:12px;
-    padding-top: 5px;
+    padding-top: 8px;
     color: hsla(0, 0%, 100%, 0.6);
     letter-spacing: 2px;
+    font-weight: 500;
 }
 
 
 @media (min-width: 768px) {
 
     .container{
+        
         display: flex;
+        flex-direction:row-reverse;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
+        text-align: left;
+        padding: 0px;
     }
-    
+
+    .tarjeta{
+        margin: auto;
+        padding-left: 10px;
+    }
+
+    .tituloprincipal{
+        font-weight: 700;
+    }
+
+    .texto{
+        font-weight: 500;
+        text-align:left;
+        padding-top: 20px;
+    }
+
+    .footer .data{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 10px;
+        
+    }
+
+    .footer .data .titulo{
+        font-weight: 700;
+        font-size:24px;
+        padding-right: 20px;
+    }
+
+    .footer .data  span {
+        display: block;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-weight: 500;
+        font-size:12px;
+        padding-bottom: 15px;
+    }
+
+    .foto{
+        background: url("./images/image-header-desktop.jpg") 
+        no-repeat center/cover;
+        min-width: 40%;
+        height: 450px;
+        background-color: hsl(277, 64%, 61%);
+        background-blend-mode: multiply;  
+    }
 }
